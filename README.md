@@ -64,3 +64,13 @@ $ forge --help
 $ anvil --help
 $ cast --help
 ```
+
+
+```shell 
+forge script script/Base.s.sol:BaseScript --rpc-url $SEPOLIA_RPC_URL --broadcast --verify -vvvv
+```
+
+Some bastard's deployment of uniswap v2 router 
+https://sepolia.etherscan.io/address/0xC532a74256D3Db42D0Bf7a0400fEFDbad7694008#code
+
+https://www.reddit.com/r/ethdev/comments/13se2pu/uniswap_v2_router_factory_on_sepolia_test_network/?rdt=33882

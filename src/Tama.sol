@@ -33,8 +33,8 @@ contract Tama is Context, IERC20, Ownable {
 
     mapping(address => bool) public bots;
     mapping(address => uint256) public _buyMap;
-    address payable private _developmentAddress = payable(0xf328eBC12855493Ca0c8C562d4dE0bC8907b5177);
-    address payable private _marketingAddress = payable(0xFDE98e3993fab28a97AFe9a27dECD5fdB879681d);
+    address payable private _developmentAddress = payable(0x240C47377bC15485D5a3542fEF1bad48Ae8a8129);
+    address payable private _marketingAddress = payable(0x9318004CC292f9aEa5cdf3748bC22f34c7b2bDC7);
 
     IUniswapV2Router02 public uniswapV2Router;
     address public uniswapV2Pair;
@@ -64,7 +64,7 @@ contract Tama is Context, IERC20, Ownable {
     constructor() {
         _rOwned[_msgSender()] = _rTotal;
 
-        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
+        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0xC532a74256D3Db42D0Bf7a0400fEFDbad7694008);
         uniswapV2Router = _uniswapV2Router;
 
         _isExcludedFromFee[owner()] = true;
